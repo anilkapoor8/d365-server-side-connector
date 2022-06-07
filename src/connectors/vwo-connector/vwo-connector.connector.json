@@ -1,0 +1,26 @@
+{
+  "$type": "experimentationConnector",
+  "name": "vwo-connector",
+  "description": "DYNAMICS 365 COMMERCE CONNECTOR TO VWO",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "accountId": {
+        "type": "string",
+        "description": "The accountId is the Id associated with the account of the client on VWO portal. This information is required."
+      },
+      "sdkKey": {
+        "type": "string",
+        "description": "An sdkKey is a key associated with an environment in the project to instantiate a client. This information is required."
+      },
+      "pollTime": {
+        "type": "integer",
+        "description": "Poll time controls the update interval of the VWO SDK how often to poll for the latest changes made to your features is measured in seconds. It should match the cache settings provided for the datafile to keep your server and client instances in sync."
+      }
+    },
+    "required": [
+      "sdkKey",
+      "accountId"
+    ]
+  }
+}

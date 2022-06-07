@@ -1,0 +1,19 @@
+{
+    "experimentation": {
+        "name": "VWO",
+        "config": { 
+            "accountId": "ACCOUNT_ID",
+            "sdkKey": "SDK_KEY",
+            "pollTime": 0
+        },
+        "cacheConfig": {
+            "ttlInSeconds": {
+                "experimentation": 1800,
+                "experimentationDataFile": 300
+            },
+            "ttrInSeconds": {
+                "experimentation": 10
+            }
+        }
+    }
+}
